@@ -14,4 +14,6 @@ WORKDIR /app
 
 COPY --from=builder /tmp/target/app-be.jar .
 
-CMD ["java", "-jar", "app-be.jar"]
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "app-be.jar"]
