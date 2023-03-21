@@ -80,7 +80,7 @@ public class ExperienciaController {
             return new ResponseEntity(new Mensaje("El id no existe"), HttpStatus.BAD_REQUEST);
         }
         experienciaService.delete(id);
-        return new ResponseEntity(new Mensaje("Experiencia Eliminada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Experiencia eliminada"), HttpStatus.OK);
     }
 
 }

@@ -73,7 +73,7 @@ public class EducacionController {
 
 
         educacionService.save(educacion);
-        return new ResponseEntity(new Mensaje("Item actualozado"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Item actualizado"), HttpStatus.OK);
     }
 @PreAuthorize ("hasRole('ADMIN')")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
@@ -82,7 +82,7 @@ public class EducacionController {
             return new ResponseEntity(new Mensaje("El id no existe"), HttpStatus.BAD_REQUEST);
         }
         educacionService.delete(id);
-        return new ResponseEntity(new Mensaje("Item Eliminado"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Item eliminado"), HttpStatus.OK);
     }
 
 }
